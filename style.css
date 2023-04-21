@@ -326,3 +326,77 @@ article {
 article .icon {
   cursor: pointer;
 }
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgba(255, 255, 255);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: #000;
+}
+
+.project-btn {
+  color: #000;
+  border-color: rgb(163, 163, 163);
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: rgba(255, 255, 255);
+  margin: 2rem;
+  padding: 0.5rem;
+}
+
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p{
+    font-size: larger;
+}
+
+.contact-icon{
+    cursor: default;
+
+}
+.email-icon{
+    height: 2.5rem;
+}
+
+footer{
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p{
+text-align: center;
+}
+
+
