@@ -37,6 +37,8 @@
     margin: 0 auto 2rem;
   }
   .about-containers {
+    flex-wrap: wrap;
+    flex: 50%;
     margin-top: 0;
   }
 }
