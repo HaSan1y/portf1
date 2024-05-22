@@ -1,286 +1,342 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- edit * if vercel screws me with csp <meta http-equiv="Content-Security-Policy"
+<html lang="en" id="body" class="white">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- edit * if vercel screws me with csp <meta http-equiv="Content-Security-Policy"
         content="default-src *; img-src *; child-src *; media-src *; script-src *;" /> -->
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" media="screen" />
-    <link rel="stylesheet" href="mediaqueries.css" media="screen" />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" media="screen">
-</head>
+      <title>Portfolio</title>
+      <link rel="stylesheet" href="style.css" media="screen" />
+      <link rel="stylesheet" href="mediaqueries.css" media="screen" />
+      <link rel="icon" type="image/x-icon" href="assets/favicon.ico" media="screen" />
+   </head>
 
-<body>
-    <!-- cookie -->
-    <div class="wrapper">
-        <header>
-            <box-icon class="bx bx-cookie" name='cookie' type='solid'></box-icon>
+   <body>
+      <!-- cookie -->
+      <div class="wrapper">
+         <header>
+            <box-icon class="bx bx-cookie" name="cookie" type="solid"></box-icon>
             <h2>Cookie Consent</h2>
-        </header>
+         </header>
 
-        <div class="data">
-            <p>This website uses cookies, to help you have a superior and more admissible browsing experience<br /><a
-                    href="https://www.datenschutz.org/cookie-consent/">Read more...</a>
-            </p>
-        </div>
-        <div class="buttons">
+         <div class="data">
+            <p>This website uses cookies, to help you have a superior and more admissible browsing experience<br /><a href="https://www.datenschutz.org/cookie-consent/">Read more...</a></p>
+         </div>
+         <div class="buttons">
             <button class="button" id="acceptBtn">Accept</button>
             <button class="button">Decline</button>
-        </div>
-    </div>
-    <nav id="desktop-nav">
-        <div class="logo">Hasan Yildirim</div>
-        <div>
+         </div>
+      </div>
+      <nav id="desktop-nav">
+         <div class="logo">Hasan Yildirim</div>
+         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#experience">Experience</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </nav>
-    <!-- nav -->
-    <nav id="hamburger-nav">
-        <div class="logo">Hasan Yildirim</div>
-        <div class="hamburger-menu">
+         </div>
+         <button type="button" id="theme" onclick="xx()">theme</button>
+      </nav>
+      <!-- nav -->
+      <nav id="hamburger-nav">
+         <div class="logo">Hasan Yildirim</div>
+         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="togglemenu()">
-                <span><br></span>
-                <span><br></span>
-                <span><br></span>
+               <span><br /></span>
+               <span><br /></span>
+               <span><br /></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="togglemenu()">about</a></li>
-                <li><a href="#experience" onclick="togglemenu()">experience</a></li>
-                <li><a href="#projects" onclick="togglemenu()">projects</a></li>
-                <li><a href="#contact" onclick="togglemenu()">contact</a></li>
+               <li><a href="#about" onclick="togglemenu()">about</a></li>
+               <li><a href="#experience" onclick="togglemenu()">experience</a></li>
+               <li><a href="#projects" onclick="togglemenu()">projects</a></li>
+               <li><a href="#contact" onclick="togglemenu()">contact</a></li>
             </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <!-- <div class="section_pic-container">
+         </div>
+      </nav>
+      <section id="profile">
+         <!-- <div class="section_pic-container">
             <img src="assets/profile-pic.png" alt="John Doe Profile Picture" />
         </div> -->
-        <div class="section_text">
+         <div class="section_text">
             <p class="section_text_p1">Hello, Im</p>
             <h1 class="title">Hasan Yildirim</h1>
             <p class="section_text_p2">Web Developer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-                    Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="window.location.href='/#contact'">
-                    Contact Info
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='https://h451.blogspot.com/2023/09/1.html'">
-                    To My Blog
-                </button>
+               <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+               <button class="btn btn-color-1" onclick="window.location.href='/#contact'">Contact Info</button>
+               <button class="btn btn-color-1" onclick="location.href='https://h451.blogspot.com/2023/09/1.html'">To My Blog</button>
             </div>
             <div id="socials-container">
-                <img src="assets/linkedin.png" alt="my linkedin profile" class="icon x"
-                    onclick="location.href='https://www.linkedin.com/'" />
-                <img src="assets/github.png" alt="my github profile" class="icon x"
-                    onclick="location.href='https://www.github.com/HaSan1y'" />
+               <img src="assets/linkedin.png" alt="my linkedin profile" class="icon x" onclick="location.href='https://www.linkedin.com/'" />
+               <img src="assets/github.png" alt="my github profile" class="icon x" onclick="location.href='https://www.github.com/HaSan1y'" />
             </div>
-        </div>
-    </section>
+         </div>
+      </section>
 
-    <section id="about">
-        <p class="section_text_p1">Get To Know More</p>
-        <h1 class="title">About ME</h1>
-        <div class="section-container">
+      <section id="about">
+         <p class="section_text_p1">Get To Know More</p>
+         <h1 class="title">About ME</h1>
+         <div class="section-container">
             <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="assets/experience.png" alt="experience icon" class="icon" />
-                        <h3>Experience</h3>
-                        <p>1+ years <br />Front-Backend Developer</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="assets/education.png" alt="education icon" class="icon" />
-                        <h3>Education</h3>
-                        <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non a
-                        repudiandae asperiores culpa dignissimos! Perferendis laudantium
-                        architecto accusamus neque soluta, voluptates unde asperiores at
-                        beatae quidem blanditiis nulla. Asperiores et debitis quas,
-                        commodi, error consequatur at ducimus, nulla fugiat sit esse
-                        voluptates blanditiis perferendis dolorum possimus! Reprehenderit
-                        optio nam molestiae!
-                    </p>
-                </div>
+               <div class="about-containers">
+                  <div class="details-container">
+                     <img src="assets/experience.png" alt="experience icon" class="icon" />
+                     <h3>Experience</h3>
+                     <p>1+ years <br />Front-Backend Developer</p>
+                  </div>
+                  <div class="details-container">
+                     <img src="assets/education.png" alt="education icon" class="icon" />
+                     <h3>Education</h3>
+                     <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+                  </div>
+               </div>
+               <div class="text-container">
+                  <p>
+                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non a repudiandae asperiores culpa dignissimos! Perferendis laudantium architecto accusamus neque soluta, voluptates unde
+                     asperiores at beatae quidem blanditiis nulla. Asperiores et debitis quas, commodi, error consequatur at ducimus, nulla fugiat sit esse voluptates blanditiis perferendis dolorum
+                     possimus! Reprehenderit optio nam molestiae!
+                  </p>
+               </div>
             </div>
-        </div>
-        <img src="/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='/#experience'" />
-    </section>
-    <section id="experience">
-        <p class="section_text_p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
+         </div>
+         <img src="/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='/#experience'" />
+      </section>
+      <section id="experience">
+         <p class="section_text_p1">Explore My</p>
+         <h1 class="title">Experience</h1>
+         <div class="experience-details-container">
             <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>SASS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Storage+SQL</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Node JS+API</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Express JS</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Github</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>PHP</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+               <div class="details-container">
+                  <h2 class="experience-sub-title">Frontend Development</h2>
+                  <div class="article-container">
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>HTML</h3>
+                           <p>Experienced</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>CSS</h3>
+                           <p>Experienced</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>SASS</h3>
+                           <p>Intermediate</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>JavaScript</h3>
+                           <p>Intermediate</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>TypeScript</h3>
+                           <p>Basic</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>React</h3>
+                           <p>Basic</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>SEO, accessibility</h3>
+                           <p>Basic</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>FIGMA, Framer, WP, templates</h3>
+                           <p>Basic</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>googlefonts, tailwind, materilaze, bootstrap</h3>
+                           <p>Intermediate</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>svg, webp</h3>
+                           <p>Intermediate</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>ai, crypto</h3>
+                           <p>basic</p>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+               <div class="details-container">
+                  <h2 class="experience-sub-title">Backend Development</h2>
+                  <div class="article-container">
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>indexdb webapi, cookie</h3>
+                           <p>Intermediate</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>SQLite, mySQL, postgreSQL</h3>
+                           <p>Basic</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>Node.JS, Express JS, npm API</h3>
+                           <p>Basic</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>client serverside, webhost</h3>
+                           <p>Basic</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>jquery</h3>
+                           <p>Basic</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>Github</h3>
+                           <p>Intermediate</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>PHP, htmx</h3>
+                           <p>Basic</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>python, django</h3>
+                           <p>Basic</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>service-web worker</h3>
+                           <p>Basic</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>local- session storage</h3>
+                           <p>Intermediate</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="/assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                           <h3>JSON, browser-extension</h3>
+                           <p>Basic</p>
+                        </div>
+                     </article>
+                  </div>
+               </div>
             </div>
-        </div>
-        <img src="/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-    </section>
+         </div>
+         <img src="/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+      </section>
 
-
-    <section id="projects">
-        <p class="section_text_p1">Browse By Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
+      <section id="projects">
+         <p class="section_text_p1">Browse By Recent</p>
+         <h1 class="title">Projects</h1>
+         <div class="experience-details-container">
             <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container"><img src="/assets/project-1.webp" alt="Project 1" class="project-img" loading="lazy">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
-                    <div class="btn-container"><button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://www.github.com/HaSan1y'">Github</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://portf2-zeta.vercel.app/'">Live
-                            Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container"><img src="/assets/project-2.webp" alt="Project 2" class="project-img" loading="lazy">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Two</h2>
-                    <div class="btn-container"><button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://www.github.com/HaSan1y'">Github</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://portf2-zeta.vercel.app/'">Live
-                            Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container"><img src="/assets/project-3.webp" alt="Project 3" class="project-img" loading="lazy">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Three</h2>
-                    <div class="btn-container"><button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://www.github.com/HaSan1y'">Github</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://portf2-zeta.vercel.app/'">Live
-                            Demo</button>
-                    </div>
-                </div>
+               <div class="details-container color-container">
+                  <div class="article-container"><img src="/assets/project-1.webp" alt="Project 1" class="project-img" loading="lazy" /></div>
+                  <h2 class="experience-sub-title project-title">Project One</h2>
+                  <div class="btn-container">
+                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com/HaSan1y'">Github</button>
+                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://portf2-zeta.vercel.app/'">Live Demo</button>
+                  </div>
+               </div>
+               <div class="details-container color-container">
+                  <div class="article-container"><img src="/assets/project-2.webp" alt="Project 2" class="project-img" loading="lazy" /></div>
+                  <h2 class="experience-sub-title project-title">Project Two</h2>
+                  <div class="btn-container">
+                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com/HaSan1y'">Github</button>
+                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://portf2-zeta.vercel.app/'">Live Demo</button>
+                  </div>
+               </div>
+               <div class="details-container color-container">
+                  <div class="article-container"><img src="/assets/project-3.webp" alt="Project 3" class="project-img" loading="lazy" /></div>
+                  <h2 class="experience-sub-title project-title">Project Three</h2>
+                  <div class="btn-container">
+                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com/HaSan1y'">Github</button>
+                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://portf2-zeta.vercel.app/'">Live Demo</button>
+                  </div>
+               </div>
             </div>
-        </div>
-        <img src="/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-    </section>
-    <section id="contact">
-        <p class="section_text_p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-container">
-            <img src="assets/github.png" alt="my github profile" class="icon x"
-                onclick="location.href='https://www.github.com/HaSan1y'" />
+         </div>
+         <img src="/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+      </section>
+      <section id="contact">
+         <p class="section_text_p1">Get in Touch</p>
+         <h1 class="title">Contact Me</h1>
+         <div class="contact-info-container">
+            <img src="assets/github.png" alt="my github profile" class="icon x" onclick="location.href='https://www.github.com/HaSan1y'" />
             <p><a href="https://www.github.com/HaSan1y">Github</a></p>
-        </div>
-        <div class="contact-info-container email-icon">
-            <img src="/assets/email.png" alt="Email icon" class="icon contact-icon">
+         </div>
+         <div class="contact-info-container email-icon">
+            <img src="/assets/email.png" alt="Email icon" class="icon contact-icon" />
             <p><a href="mailto:hasan.yildirim@outlook.com">hasan.yildirim&#64;outlook.com</a></p>
-        </div>
-    </section>
-    <footer>
-        <nav>
+         </div>
+      </section>
+      <footer>
+         <nav>
             <div class="navlinks-container">
-                <div class="menu-links">
-                    <li><a href="#about" onclick="togglemenu()">about</a></li>
-                    <li><a href="#experience" onclick="togglemenu()">experience</a></li>
-                    <li><a href="#projects" onclick="togglemenu()">projects</a></li>
-                    <li><a href="#contact" onclick="togglemenu()">contact</a></li>
-                </div>
+               <div class="menu-links">
+                  <li><a href="#about" onclick="togglemenu()">about</a></li>
+                  <li><a href="#experience" onclick="togglemenu()">experience</a></li>
+                  <li><a href="#projects" onclick="togglemenu()">projects</a></li>
+                  <li><a href="#contact" onclick="togglemenu()">contact</a></li>
+               </div>
             </div>
-        </nav>
-        <p>Copyright &#169; 2023 Hasan Yildirim. All Rights Reserved</p>
-    </footer>
+         </nav>
+         <p>Copyright &#169; 2023 Hasan Yildirim. All Rights Reserved</p>
+      </footer>
 
-
-
-    <script src="script.js"></script>
-</body>
-
+      <script src="script.js"></script>
+   </body>
 </html>

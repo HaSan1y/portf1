@@ -26,3 +26,19 @@ const executeCodes = () => {
 };
 
 window.addEventListener("load", executeCodes);
+
+
+function xx(){
+ let y=document.documentElement;
+ if(y.classList=='dark'){y.classList.replace('dark','white');}else{
+  y.classList.replace('white','dark');
+ }
+  
+}
+
+
+
+
+
+
+

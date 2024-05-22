@@ -1,9 +1,3 @@
-/* @media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-} */
 
 @media screen and (max-width: 1400px) {
   #desktop-nav {
@@ -17,7 +11,6 @@
   .experience-details-container {
     margin-top: 2rem;
   }
-  #profile,
   .section-container {
     display: block;
   }
