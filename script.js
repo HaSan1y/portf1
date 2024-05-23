@@ -1,8 +1,6 @@
 function togglemenu() {
-   const menu = document.querySelector(".menu-links");
-   const icon = document.querySelector(".hamburger-icon");
-   menu.classList.toggle("open");
-   icon.classList.toggle("open");
+   document.querySelector(".menu-links").classList.toggle("open");
+   document.querySelector(".hamburger-icon").classList.toggle("open");
 }
 //cookielaw
 const cookieBox = document.querySelector(".wrapper");
@@ -29,8 +27,6 @@ window.addEventListener("load", executeCodes);
 
 function xx(){
  document.documentElement.classList.toggle('white');
-//  if(y.classList=='dark'){y.classList.replace('dark','white');}else{
-//   y.classList.replace('white','dark');
-//  }
-// if (y.classList.contains("dark")  
+ var currentTheme = document.documentElement.classList.contains('white')? 'dark' : 'white';
+ theme.innerText = currentTheme; 
 }
