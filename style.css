@@ -14,10 +14,13 @@
    --clr-heading: hsl(0, 0%, 23%);
 }
 
-* {
+*,
+::after,
+::before {
    margin: 0;
    padding: 0;
    line-height: 1.2;
+   box-sizing: border-box;
 }
 
 body {
@@ -29,8 +32,11 @@ html {
    scroll-behavior: smooth;
 }
 
-p {
-   color: var(--clr-text);margin-top: 5px;line-height: 1.4;
+p,
+h2 {
+   color: var(--clr-text);
+   margin-top: 5px;
+   line-height: 1.4;
 }
 
 a,
@@ -363,7 +369,8 @@ article .icon {
    cursor: pointer;
 }
 /*projects*/
-#projects,#experience {
+#projects,
+#experience {
    position: relative;
    margin-top: 3rem;
 }
@@ -449,7 +456,7 @@ footer p {
    right: -400px;
    max-width: 345px;
    width: 100%;
-   background: var(--clr-body-bg);
+   background: var(--clr-grey);
    border-radius: 8px;
    padding: 15px 25px 22px;
    transition: right 0.3s ease;
@@ -464,10 +471,7 @@ header i {
    color: var(--clr-heading);
    font-size: 32px;
 }
-header h2 {
-   color: var(--clr-heading);
-   font-weight: 500;
-}
+
 .wrapper .data p {
    margin-top: 16px;
 }
