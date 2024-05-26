@@ -1,5 +1,22 @@
+@media screen and (min-width: 1500px) {
+   nav {
+      display: flex !important;
+   }
+   #hamburger-nav {
+      display: none !important;
+   }
+}
+
 @media screen and (max-width: 1500px) {
-   #desktop-nav,.container,.con {
+   nav {
+      display: flex !important;
+   }
+   #hamburger-nav {
+      display: none !important;
+   }
+   #desktop-nav,
+   .container,
+   .con {
       display: none;
    }
 
@@ -30,15 +47,23 @@
    }
    .about-containers {
       flex-wrap: wrap;
-      flex: 50%;margin: 0 auto;
+      flex: 50%;
+      margin: 0 auto;
       /* margin-top: 0; */
    }
 }
 
-@media screen and (max-width: 600px) {
-   #contact,
-   footer {
-      height: 40vh;
+@media screen and (max-width: 800px) {
+   /*hamburger-menu*/
+   nav {
+      display: none !important;
+   }
+   #hamburger-nav {
+      display: flex !important;
+   }
+   #contact
+   {
+      line-height: 1.4;
    }
    #profile {
       height: 83vh;
