@@ -620,6 +620,7 @@ header i {
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 .container {
+   position: relative;
    display: grid;
    place-items: center;
    opacity: 0.3;
@@ -802,8 +803,12 @@ header i {
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* footer soc links animation */
 .soc {
+   display: none;
+}
+.container:hover .soc {
+   display: block;
+   position: relative;
    margin: auto;
-
 }
 .main_back {
    position: absolute;
@@ -813,10 +818,11 @@ header i {
    height: 11em;
    background: linear-gradient(270deg, #03a9f4, #cc39a4, #ffb5d2);
    z-index: -2;
-   box-shadow: inset 0px 0px 180px 5px #ffffff;
+   box-shadow: inset 0px 0px 180px 5px var(--clr-body-bg);
 }
 
 .main {
+   opacity: 0.9;
    display: flex;
    flex-wrap: wrap;
    width: 14em;
@@ -1041,12 +1047,6 @@ header i {
    stop-color: white;
 }
 
-@keyframes backgroundIMG {
-   100% {
-      background-image: linear-gradient(#bf66ff, #6248ff, #00ddeb);
-   }
-}
-
 .card:nth-child(6):hover {
    background-color: #8c9eff;
 }
@@ -1089,6 +1089,11 @@ header i {
 
 .card:nth-child(9) .reddit > g path {
    fill: white;
+}
+@keyframes backgroundIMG {
+   100% {
+      background-image: linear-gradient(#bf66ff, #6248ff, #00ddeb);
+   }
 }
 
 .text {
