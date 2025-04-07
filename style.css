@@ -1,5 +1,6 @@
 /* ctrl+# google fonts v*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
 :root {
    --clr-body-bg: rgb(37, 33, 31);
    --clr-card-bg: rgb(56, 55, 55);
@@ -7,6 +8,7 @@
    --clr-grey: #7e7e7e;
    --clr-heading: hsl(209 50% 25%);
 }
+
 .white {
    --clr-body-bg: rgb(255, 255, 255);
    --clr-card-bg: hsl(0, 100%, 83%);
@@ -185,6 +187,7 @@ a:hover {
    background-color: var(--clr-card-bg);
    opacity: 0.9;
 }
+
 /*btn*/
 .btn-container {
    display: flex;
@@ -231,6 +234,7 @@ a:hover {
 .btn-container {
    gap: 1rem;
 }
+
 /*section*/
 section {
    padding-top: 4vh;
@@ -263,7 +267,7 @@ section {
    text-align: center;
 }
 
-.section_text > * {
+.section_text>* {
    margin: 10px 0;
 }
 
@@ -321,13 +325,15 @@ section {
    right: -5rem;
    /* bottom: 2.5rem; */
 }
+
 /*experience*/
 .text-container {
    margin-top: 15px;
 }
+
 .details-container {
    align-items: center;
-   justify-content: space-evenly;
+   justify-content: center;
    padding: 3rem;
    display: grid;
    align-items: center;
@@ -388,6 +394,7 @@ article {
 article .icon {
    cursor: pointer;
 }
+
 /*projects*/
 #projects,
 #experience {
@@ -424,6 +431,7 @@ article .icon {
    background-color: var(--clr-heading);
    border-color: var(--clr-grey);
 }
+
 /*contact*/
 #contact {
    display: flex;
@@ -467,6 +475,7 @@ footer p {
    text-align: center;
    font-size: 0.8em;
 }
+
 /*cookie*/
 .wrapper {
    position: fixed;
@@ -544,9 +553,11 @@ header i {
    0% {
       background-position: 0% 50%;
    }
+
    50% {
       background-position: 100% 50%;
    }
+
    100% {
       background-position: 0% 50%;
    }
@@ -618,6 +629,7 @@ header i {
 .button:active::before {
    scale: 0.7;
 }
+
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 .container {
    position: relative;
@@ -703,12 +715,15 @@ header i {
       12px 32px 0px #000, 14px 32px 0px #000, 16px 32px 0px #000, 18px 32px 0px #000, 20px 32px 0px #000, 22px 32px 0px #000, 24px 32px 0px #000, 26px 32px 0px #000, 28px 32px 0px #000,
       30px 32px 0px #000, 32px 32px 0px #000;
 }
+
 .brick.one {
    transform: translateX(-60px);
 }
+
 .brick.two {
    transform: translateY(-110px);
 }
+
 .mush {
    height: 2px;
    width: 2px;
@@ -738,6 +753,7 @@ header i {
    z-index: -1;
    opacity: 0;
 }
+
 .box {
    position: absolute;
    background-color: rgba(46, 37, 37, 0);
@@ -745,21 +761,26 @@ header i {
    width: 34px;
    height: 34px;
 }
-.box:hover + .mush {
+
+.box:hover+.mush {
    animation: mush 0.5s linear forwards;
    opacity: 1;
 }
+
 @keyframes mush {
    0% {
       transform: scale(0.8) translate(-0px, -0px);
    }
+
    50% {
       transform: scale(1.1) translate(-0px, -80px);
    }
+
    100% {
       transform: scale(1.1) translate(-0px, -35px);
    }
 }
+
 .tooltip-mario-container {
    height: 2px;
    width: 2px;
@@ -805,11 +826,13 @@ header i {
 .soc {
    display: none;
 }
+
 .container:hover .soc {
    display: block;
    position: relative;
    margin: auto;
 }
+
 .main_back {
    position: absolute;
    border-radius: 10px;
@@ -1067,15 +1090,15 @@ header i {
    background-color: #29b6f6;
 }
 
-.card:nth-child(8):hover .telegram > path:nth-of-type(1) {
+.card:nth-child(8):hover .telegram>path:nth-of-type(1) {
    fill: white;
 }
 
-.card:nth-child(8):hover .telegram > path:nth-of-type(2) {
+.card:nth-child(8):hover .telegram>path:nth-of-type(2) {
    fill: #29b6f6;
 }
 
-.card:nth-child(8):hover .telegram > path:nth-of-type(3) {
+.card:nth-child(8):hover .telegram>path:nth-of-type(3) {
    fill: #29b6f6;
 }
 
@@ -1083,13 +1106,14 @@ header i {
    background-color: rgb(255, 69, 0);
 }
 
-.card:nth-child(9) .reddit > g circle {
+.card:nth-child(9) .reddit>g circle {
    fill: rgb(255, 69, 0);
 }
 
-.card:nth-child(9) .reddit > g path {
+.card:nth-child(9) .reddit>g path {
    fill: white;
 }
+
 @keyframes backgroundIMG {
    100% {
       background-image: linear-gradient(#bf66ff, #6248ff, #00ddeb);
