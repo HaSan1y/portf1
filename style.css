@@ -344,6 +344,9 @@ section {
    border-color: var(--clr-grey);
    text-align: center;
    box-shadow: 5px 5px var(--clr-grey);
+   mask: linear-gradient(transparent, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+   -webkit-mask: linear-gradient(transparent, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+
 }
 
 .section-container {
@@ -1117,6 +1120,35 @@ header i {
 @keyframes backgroundIMG {
    100% {
       background-image: linear-gradient(#bf66ff, #6248ff, #00ddeb);
+   }
+}
+
+.experience-details-container {
+   overflow: hidden;
+}
+
+.about-containers.asdf {
+   display: flex;
+   overflow: hidden;
+   margin: 2rem auto;
+   mask: linear-gradient(transparent, #ffffff 10%, #ffffff 90%, transparent 100%);
+   -webkit-mask: linear-gradient(transparent, #ffffff 10%, #ffffff 90%, transparent 100%);
+}
+
+.about-containers.asdf.animated {
+   flex-wrap: nowrap;
+   width: max-content;
+   will-change: transform;
+   animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+   0% {
+      transform: translateX(0%);
+   }
+
+   100% {
+      transform: translateX(-50%);
    }
 }
 
