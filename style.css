@@ -308,9 +308,9 @@ section {
    margin: 2rem auto;
    justify-content: space-around;
    display: flex;
+   flex: 1 1 50%;
 }
 
-.about-containers,
 .about-details-container {
    display: flex;
    margin: 2rem auto;
